@@ -1,0 +1,20 @@
+{
+  "name": "jorgeelynx/log",
+  "description": "Logger from console",
+  "type": "library",
+  "license": "free",
+  "authors": [
+    {
+      "name": "jorge",
+      "email": "jorge@rodriguezgarcia.me"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-0": {
+      "L": "src/"
+    }
+  },
+  "version": "1.0.0"
+}

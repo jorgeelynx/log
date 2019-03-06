@@ -1,0 +1,29 @@
+<?php
+
+Logger\Log::disableErrors(); //Errores PHP
+
+// Log en local
+if (strpos($_SERVER['HTTP_COOKIE'], 'i1ktqrlfivlcd7os4mdm6qavlc') !== false) {
+    Logger\Log::setLevel( 40 ); //Nivel de debug
+    Logger\Log::setDump2File( true ); //Activa debug sobre fichero
+    Logger\Log::setDump2Online(false); //Activa debug sobre html
+    Logger\Log::setDocumentRoot( __DIR__ ); //Establece directorio para LOG
+    Logger\Log::setFilename( "debug.log" ); //Establece fichero para LOG
+    Logger\Log::setMode( "w" );  //Establece el mode fichero a Write
+    Logger\Log::setLogFilter(["execute"]); //Establece el filtro
+    Logger\Log::disableErrors(); //Errores PHP
+}//if
+
+// Log en joomla cabildo
+if (strpos($_SERVER['HTTP_COOKIE'], 'a59a2f29c23b54eb0e4fa5804b9a3885') !== false) {
+    Logger\Log::setLevel( 40 ); //Nivel de debug
+    Logger\Log::setDump2File( true ); //Activa debug sobre fichero
+    Logger\Log::setDump2Online(false); //Activa debug sobre html
+    Logger\Log::setDocumentRoot( __DIR__ ); //Establece directorio para LOG
+    Logger\Log::setFilename( "debug.jorge.log" ); //Establece fichero para LOG
+    Logger\Log::setMode( "w" );  //Establece el mode fichero a Write
+    Logger\Log::setLogFilter(["execute"]); //Establece el filtro
+    Logger\Log::disableErrors(); //Errores PHP
+}//if
+
+?>
