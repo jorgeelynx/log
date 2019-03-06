@@ -3,18 +3,18 @@
   "description": "Logger from console",
   "type": "library",
   "license": "0BSD",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "jorge",
       "email": "jorge@rodriguezgarcia.me"
     }
   ],
-  "minimum-stability": "dev",
   "require": {},
+  "require-dev": {},
   "autoload": {
     "psr-0": {
       "L": "src/"
     }
-  },
-  "version": "1.0.0"
+  }
 }
